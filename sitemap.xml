@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://smacknick.github.io/elpuesto/</loc>
+    <loc>https://elpuestorestaurant.cl/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
+
+  <url>
+    <loc>https://elpuestorestaurant.cl/historia/</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://elpuestorestaurant.cl/carta/</loc>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://elpuestorestaurant.cl/galeria/</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://elpuestorestaurant.cl/contacto/</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
