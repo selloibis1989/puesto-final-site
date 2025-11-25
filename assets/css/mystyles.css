@@ -937,16 +937,23 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     align-items: center;
   }
   
+  .visitanos-info{
+    flex: 1;
+    max-width: 380px;          /* acota el ancho para mejor lectura */
+  }
+
   .visitanos-info h2{
-    margin: 0 0 14px;
+    margin: 0 0 16px;
     font-size: 2rem;
   }
   
   .visitanos-texto{
     color: var(--muted);
-    margin: 0 0 14px;
+    margin: 0 0 10px;
     line-height: 1.7;
+    font-size: 0.98rem;
   }
+  
   
   .visitanos-info a{
     color: var(--brand-2);
@@ -957,6 +964,16 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     opacity: .9;
   }
   
+/* separa dirección del bloque teléfono/mail */
+.visitanos-texto + .visitanos-texto{
+  margin-top: 8px;
+}
+
+/* botón un pelín más separado del texto */
+.visitanos .btn.ghost{
+  margin-top: 14px;
+}
+
   /* botón ghost ya existe, reutilizas .btn.ghost */
   
   .visitanos-map iframe{
