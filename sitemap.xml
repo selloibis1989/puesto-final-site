@@ -8,7 +8,7 @@
   </url>
 
   <url>
-    <loc>https://elpuestorestaurant.cl/historia/</loc>
+    <loc>https://elpuestorestaurant.cl/la-experiencia/</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -16,12 +16,6 @@
   <url>
     <loc>https://elpuestorestaurant.cl/carta/</loc>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://elpuestorestaurant.cl/galeria/</loc>
-    <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 

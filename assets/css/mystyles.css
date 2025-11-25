@@ -656,59 +656,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   }
   
   
-  /* =========================================
-   CTA RESERVAS — COLOR DESTACADO
-   ========================================= *
-   .cta-reserva{
-    background: linear-gradient(180deg, #c79a5c, #b38345);
-    padding: clamp(32px, 6vw, 60px) 20px; /* más pequeño y elegante */
-  /*  text-align:center;
-    color:#111;
-    margin-top: clamp(50px, 7vw, 10px);
-    border-radius: 0; /* por si en algún momento quieres redondear 
-  }
 
-.cta-reserva .cta-inner{
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.cta-reserva h2{
-  font-size: clamp(26px, 3.2vw, 36px);
-  margin:0 0 6px;
-  font-weight:700;
-  letter-spacing:.02em;
-}
-
-.cta-reserva p{
-  font-size: clamp(14px, 1.6vw, 17px);
-  margin: 0 0 24px;
-  opacity:.9;
-}
-
-/* Botón principal 
-.btn-reserva{
-  display:inline-block;
-  padding: 14px 26px;
-  border-radius: 999px;
-  font-weight:700;
-  text-decoration:none;
-  font-size:16px;
-  background:#111;
-  color:#f4d6a3;
-  border: 1px solid rgba(0,0,0,.4);
-  box-shadow: 0 10px 22px rgba(0,0,0,.25);
-  transition: all .25s ease;
-}
-
-.btn-reserva:hover{
-  transform: translateY(-2px);
-  background:#000;
-}
-
-/* ================================
-   CTA RESERVA
-   ================================ */
 /* ================================
    CTA RESERVA – Versión Premium
    ================================ */
@@ -831,94 +779,6 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     }
   }
   
-
-  /* ================================
-     CARTA TEASER
-     ================================ */
-  .carta-teaser .carta-preview{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:14px;
-    margin-top:18px;
-  }
-  .carta-preview article{
-    background:var(--bg-soft);
-    border:1px solid var(--stroke);
-    border-radius:16px;
-    overflow:hidden;
-    text-align:center;
-    transition:transform .2s ease;
-  }
-  .carta-preview article:hover{
-    transform: translateY(-3px);
-  }
-  .carta-preview img{
-    width:100%; height:170px; object-fit:cover;
-  }
-  .carta-preview h3{
-    margin:10px 8px 12px;
-    font-size:15px;
-    font-weight:800;
-    letter-spacing:.2px;
-  }
-  
-  @media(max-width: 980px){
-    .carta-teaser .carta-preview{ grid-template-columns: repeat(2, 1fr); }
-  }
-  @media(max-width: 520px){
-    .carta-teaser .carta-preview{ grid-template-columns:1fr; }
-  }
-
-  /* ================================
-     MINI GALLERY
-     ================================ */
-  .mini-gallery h2{ margin-bottom:12px; }
-  .gallery-grid{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:10px;
-  }
-  .gallery-grid img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:14px;
-    border:1px solid var(--stroke);
-  }
-  @media(max-width: 900px){
-    .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
-  }
-  @media(max-width: 520px){
-    .gallery-grid{ grid-template-columns:1fr; }
-    .gallery-grid img{ height:200px; }
-  }
-  
-  /* ================================
-     SOCIAL PROOF
-     ================================ */
-  .social-proof{
-    text-align:center;
-    padding-top:40px;
-    padding-bottom:40px;
-  }
-  .social-icons{
-    margin-top:12px;
-    display:flex;
-    justify-content:center;
-    gap:14px;
-    flex-wrap:wrap;
-  }
-  .social-icons img{
-    height:46px;
-    width:auto;
-    opacity:.95;
-    transition: opacity .2s ease, transform .2s ease;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,.5));
-  }
-  .social-icons img:hover{
-    opacity:1;
-    transform: translateY(-2px);
-  }
   
 /* ================================
    VISÍTANOS / UBICACIÓN
@@ -1082,3 +942,189 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     stroke:var(--brand-2);
   }
   
+  /* ================================
+   HERO SUBPÁGINAS (CONTACTO, ETC.)
+   ================================ */
+
+.hero.hero-sub{
+  min-height: 55vh;                /* más baja que el home */
+}
+
+.hero.hero-sub .hero-content{
+  padding-top: 120px;
+  padding-bottom: 70px;
+  max-width: 760px;
+}
+
+.hero.hero-sub .hero-title{
+  font-size: clamp(24px, 3.4vw, 36px);
+}
+
+.hero.hero-sub .hero-subtitle{
+  font-size: clamp(13px, 1.6vw, 18px);
+}
+
+/* opcional: un overlay un pelín más suave que en el home */
+.contact-hero::after{
+  background:
+    radial-gradient(900px 600px at 50% 65%, rgba(0,0,0,.05), rgba(0,0,0,.65)),
+    linear-gradient(to bottom, rgba(0,0,0,.28), rgba(0,0,0,.78));
+}
+
+/* ================================
+   CONTACTO — 2 COLUMNAS
+   ================================ */
+
+.contact-section{
+  padding: 70px 20px 80px;
+}
+
+.contact-inner{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0,1.05fr) minmax(0,1.1fr);
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info h2{
+  margin: 0 0 14px;
+  font-size: 2rem;
+}
+
+.contact-lead{
+  color: var(--muted);
+  margin: 0 0 20px;
+  max-width: 420px;
+}
+
+.contact-block{
+  margin-bottom: 18px;
+}
+
+.contact-block h3{
+  margin: 0 0 4px;
+  font-size: 0.98rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--brand-2);
+}
+
+.contact-block p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.contact-note{
+  display:block;
+  margin-top: 3px;
+  font-size: 0.86rem;
+  opacity:.85;
+}
+
+.contact-info a{
+  color: var(--brand-2);
+  text-decoration:none;
+}
+
+.contact-info a:hover{
+  opacity:.9;
+}
+
+.contact-small{
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.contact-map iframe{
+  width: 100%;
+  height: 310px;
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* MOBILE CONTACTO */
+@media (max-width: 820px){
+  .contact-inner{
+    grid-template-columns: 1fr;
+    gap: 26px;
+    text-align: center;
+  }
+  .contact-lead,
+  .contact-block p,
+  .contact-small{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .contact-info .btn{
+    justify-content:center;
+  }
+}
+
+/* ================================
+   FAQ — SOBRIO & PREMIUM
+   ================================ */
+
+.section.faq{
+  padding: 60px 18px 80px;
+  max-width: var(--maxw);
+  margin: 0 auto 40px;
+  border-top: 1px solid var(--stroke);
+}
+
+.section.faq h2{
+  text-align:center;
+  margin-bottom: 22px;
+}
+
+.faq-item{
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  border:1px solid var(--stroke);
+  padding: 18px 18px 16px;
+  box-shadow: 0 10px 32px rgba(0,0,0,.45);
+  margin-bottom: 12px;
+}
+
+.faq-item h3{
+  margin: 0 0 6px;
+  font-size: 0.98rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--brand-2);
+}
+
+.faq-item p{
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height:1.7;
+}
+
+.faq-item a{
+  color: var(--brand-2);
+  text-decoration:none;
+}
+
+.faq-item a:hover{
+  opacity:.9;
+}
+
+.map-note{
+  margin-top: 10px;
+  font-size: .9rem;
+  color: var(--muted);
+  text-align: center;
+}
+.map-note a{
+  color: var(--brand-2);
+  text-decoration: none;
+}
+
+.btn-llamar{
+  transform: translateX(-2px);
+}
