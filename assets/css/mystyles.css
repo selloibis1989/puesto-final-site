@@ -122,6 +122,17 @@
 .site-header.solid .logo-light{ opacity:1; }
 .site-header.solid .logo-dark{ opacity:0; }
 
+/* Header móvil: ocultar logo y alinear botón menú a la derecha */
+@media (max-width: 640px){
+  .site-header .brand{
+    display:none;
+  }
+
+  .site-header{
+    justify-content:flex-end;
+    padding-inline: 16px;
+  }
+}
 
   /* ================================
      SECTIONS GLOBAL
