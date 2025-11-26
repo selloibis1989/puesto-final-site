@@ -26,6 +26,13 @@
     background:var(--bg);
     line-height:1.6;
   }
+
+  .serif {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: .5px;
+  }
+
 /* ================================
    HEADER / NAV — DARK ALWAYS
    ================================ */
@@ -156,6 +163,23 @@
     }
     
     .center{ text-align:center; }
+
+    /* GENERAL LINK STYLE (premium) */
+    a {
+      color: var(--brand); /* or your gold / accent color */
+      text-decoration: none;
+    }
+
+    /* HOVER EFFECT */
+    a:hover {
+      opacity: 0.8;
+    }
+
+    /* VISITED LINKS (prevent ugly purple) */
+    a:visited {
+      color: var(--brand);
+    }
+
     
 
 /* ================================
@@ -423,9 +447,9 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   
     .hero-subtitle{
       color:var(--brand-2);
-      font-weight:700;
-      letter-spacing:.10em;
-      font-size:clamp(13px, 1.9vw, 19px);
+      font-weight:600;
+      letter-spacing: 0.4px;
+      font-size: 1.65rem;
       margin-bottom:12px;
       text-shadow:0 3px 10px rgba(0,0,0,.6);
     }
@@ -494,11 +518,36 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     50%{ transform: translateY(6px); }
   }
   
-  @media (max-width:680px){
-    .hero-content{ padding-top:90px; }
-    .hero-logo{ width:72px; }
-    .hero-title{ letter-spacing:.06em; }
+  @media (max-width: 680px) {
+
+    .hero-content{
+      padding-top: 110px;   /* baja un poco más el bloque para respirar */
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  
+    .hero-logo{
+      width: 90px;
+    }
+  
+    .hero-title{
+      font-size: 1.7rem;    /* MÁS GRANDE en mobile */
+      letter-spacing: .08em;
+    }
+  
+    .hero-subtitle{
+      font-size: 1.4rem;    /* buen tamaño para el tagline */
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .hero-text{
+      font-size: 0.95rem;   /* subimos un poco el cuerpo */
+      line-height: 1.6;
+      max-width: 32rem;
+    }
   }
+  
 /* =========================================
    EXPERIENCIA + HIGHLIGHTS + COLLAGE
    ========================================= */
@@ -787,6 +836,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   
     .exp-image img{
       max-height:none;
+      transform:none;
     }
   }
   
@@ -876,7 +926,15 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     }
   }
   
-
+  .seo-copy {
+    padding: 32px 0 40px;
+    font-size: 0.9rem;
+    color: #bfbfbf; /* o el gris que uses en el sitio */
+    line-height: 1.6;
+  }
+  .seo-copy p {
+    margin: 0;
+  }
 
   
   /* ================================
@@ -1188,6 +1246,20 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   color: var(--muted);
   line-height: 1.7;
   font-size: 0.98rem;
+}
+
+.exp-text a {
+  color: var(--brand); /* tu color dorado */
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.exp-text a:hover {
+  opacity: 0.7;
+}
+
+.exp-text a:visited {
+  color: var(--brand); /* evitar morado feo */
 }
 
 /* Imagen / media */
