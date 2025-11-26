@@ -926,22 +926,12 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     }
   }
   
-  .seo-copy {
-    padding: 32px 0 40px;
-    font-size: 0.9rem;
-    color: #bfbfbf; /* o el gris que uses en el sitio */
-    line-height: 1.6;
-  }
-  .seo-copy p {
-    margin: 0;
-  }
-
   
   /* ================================
      FOOTER
      ================================ */
   .footer{
-    padding:48px 18px;
+    padding:38px 18px;
     text-align:center;
     background:#08090a;
     border-top:1px solid var(--stroke);
@@ -1010,6 +1000,27 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   .footer-social a:hover .icon-ig{
     stroke:var(--brand-2);
   }
+
+  .footer-seo {
+    max-width: 680px;
+    margin: 24px auto 12px;
+    text-align: center;
+    font-size: 0.9rem; 
+    line-height: 1.55;
+    color: #c9c9c9; 
+    opacity: 0.8; /* antes .75 */
+  }
+  
+  .footer-address {
+    margin-top: 10px;
+  }
+  .footer-social {
+    margin-top: 10px; /* antes 16px */
+  }
+  .footer-copy {
+    margin-top: 10px; /* antes 12px */
+  }
+  
   
   /* ================================
    HERO SUBPÁGINAS (CONTACTO, ETC.)
