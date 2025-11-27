@@ -457,7 +457,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   .hero-text{
     color:rgba(255,255,255,.85);
     font-size:clamp(15px, 2vw, 18px);
-    max-width:680px;
+    max-width:100%;
     margin:0 auto 22px;
     line-height:1.6;
     text-shadow:0 3px 12px rgba(0,0,0,.6);
@@ -1361,4 +1361,17 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   .exp-location{
     text-align:center;
   }
+}
+
+.cuts-gallery{
+  display:flex;
+  gap:20px;
+  margin-top:30px;
+  overflow-x:auto;
+}
+
+.cuts-gallery img{
+  width:320px;
+  border-radius:14px;
+  flex-shrink:0;
 }
