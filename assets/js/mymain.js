@@ -95,3 +95,23 @@ navLinks.forEach(a => a.addEventListener("click", closeNav));
 document.addEventListener("keydown", (e) => {
   if(e.key === "Escape") closeNav();
 });
+
+
+    // ========================================
+    // HERO FADE IN (subtle)
+    // ========================================
+    const heroImg = document.querySelector(".hero-image");
+    const heroContent = document.querySelector(".hero-content");
+
+    if (heroImg && heroContent) {
+      const showHero = () => heroContent.classList.add("is-visible");
+
+      if (heroImg.complete) {
+        // image already loaded from cache
+        requestAnimationFrame(showHero);
+      } else {
+        heroImg.addEventListener("load", () => {
+          requestAnimationFrame(showHero);
+        });
+      }
+    }

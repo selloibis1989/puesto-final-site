@@ -1375,3 +1375,26 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   border-radius:14px;
   flex-shrink:0;
 }
+
+
+/* Initial state */
+.hero-content {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* When ready */
+.hero-content.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-content {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
