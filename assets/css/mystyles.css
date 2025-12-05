@@ -1,5 +1,5 @@
 /* ================================
-   EL PUESTO — HOME V1 STYLES
+   EL PUESTO HOME V1 STYLES
    Minimal / Premium / Fast
    ================================ */
 
@@ -34,7 +34,7 @@
   }
 
 /* ================================
-   HEADER / NAV — DARK ALWAYS
+   HEADER / NAV DARK ALWAYS
    ================================ */
 
 /* --- BASE BRAND --- */
@@ -105,7 +105,7 @@
   color:#f5f5f5;
 }
 
-/* LOGOS — USAMOS SOLO EL BLANCO */
+/* LOGOS USAMOS SOLO EL BLANCO */
 .brand .logo{
   height:44px;
   width:auto;
@@ -183,7 +183,7 @@
     
 
 /* ================================
-   PREMIUM HAMBURGER — WHITE + TIGHT
+   PREMIUM HAMBURGER WHITE + TIGHT
    ================================ */
 
    .nav-toggle{
@@ -588,7 +588,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   }
   
   /* ------------------------------
-     HIGHLIGHTS — GRID
+     HIGHLIGHTS GRID
      (soporta highlights o highlights-grid)
      ------------------------------ */
   .highlights,
@@ -630,7 +630,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   }
   
   /* ------------------------------
-     COLLAGE — 3 IMÁGENES OVERLAP
+     COLLAGE 3 IMÁGENES OVERLAP
      ------------------------------ */
   .triple-collage{
     position:relative;
@@ -1052,7 +1052,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
 }
 
 /* ================================
-   CONTACTO — 2 COLUMNAS
+   CONTACTO 2 COLUMNAS
    ================================ */
 
 .contact-section{
@@ -1146,7 +1146,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
 }
 
 /* ================================
-   FAQ — SOBRIO & PREMIUM
+   FAQ SOBRIO
    ================================ */
 
 .section.faq{
@@ -1209,7 +1209,7 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
   transform: translateX(-2px);
 }
 /* =========================================
-   LA EXPERIENCIA — LAYOUT & BLOQUES
+   LA EXPERIENCIA LAYOUT & BLOQUES
    ========================================= */
 
 /* Overlay del hero ligeramente distinto al de contacto */

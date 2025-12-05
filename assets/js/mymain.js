@@ -1,5 +1,5 @@
 // ===============================
-// El Puesto — main JS (Transparent Header Edition)
+// El Puesto main JS (Transparent Header Edition)
 // ===============================
 
 document.addEventListener("DOMContentLoaded", () => {
