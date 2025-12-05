@@ -1398,3 +1398,17 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     transition: none;
   }
 }
+
+.hero-subtitle,
+.hero-text {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 500ms ease-out 80ms, transform 500ms ease-out 80ms;
+}
+
+.hero-content.is-visible .hero-subtitle,
+.hero-content.is-visible .hero-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
